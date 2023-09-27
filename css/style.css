@@ -53,9 +53,8 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50%;
     background-color: #95C11E;
     position: fixed;
-    z-index: 99;
-    /* transition: all 0.09s linear; */
-    /* transform: translate(-50%,-50%); */
+    z-index: 10;
+    transform: translate(-50%,-50%);
 }
 
 /* Menu Button */
@@ -65,6 +64,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #cursor-blur {
+    /* transition: all cubic-bezier(0.19, 1, 0.22, 1) .6s; */
     width: 400px;
     height: 400px;
     border-radius: 50%;
@@ -315,15 +315,15 @@ video {
 }
 
 #card1:hover {
-    transform: rotate3d(1, 1, 0, 22deg);
+    transform: rotate3d(1, 1, 0, 20deg);
 }
 
 #card2:hover {
-    transform: rotate3d(-1, 1, 0, 22deg);
+    transform: rotate3d(-1, 1, 0, 20deg);
 }
 
 #card3:hover {
-    transform: rotate3d(1, 1, 1, 20deg);
+    transform: rotate3d(1, -1, 0, 20deg);
 }
 
 .overlay {
@@ -1047,7 +1047,14 @@ video {
     }
 
     .pictures span#first {
-        margin: 0 -8px;
+        margin: 0 -10px;
+    }
+
+    .pictures span#third{
+        margin:  0 7px;
+    }
+    .overlay {
+        padding: 2% 4% 0%;
     }
 }
 
