@@ -752,6 +752,15 @@ video {
         height: 48px;
     }
 
+    #page1 h1 {
+        font-size: 3.5rem;
+    }
+
+    #page1 .arrow {
+        left: -3%;
+        bottom: 20px;
+    }
+
     #page1 h2 {
         font-size: 22px;
     }
