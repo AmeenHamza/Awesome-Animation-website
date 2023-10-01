@@ -45,6 +45,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: flex-start;
     z-index: 99;
+    background-color: transparent;
 }
 
 #cursor {
@@ -87,6 +88,16 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     gap: 30px;
     z-index: 10;
+    position: relative;
+}
+
+
+#close-icon {
+    position: absolute;
+    right: 6%;
+    top: 3%;
+    font-size: 3rem;
+    display: none;
 }
 
 .navLinks h4:hover {
@@ -927,7 +938,7 @@ video {
     }
 
     .green-div {
-        margin-bottom: 56%;
+        margin-bottom: 0;
         height: 30vh;
     }
 
@@ -938,6 +949,21 @@ video {
 
     #food .text h1 {
         font-size: 28px;
+    }
+
+    #food .text {
+        z-index: 1;
+        margin-bottom: 0;
+    }
+
+    #food .pictures {
+        width: 80%;
+        height: 40%;
+    }
+
+    #food .pictures img {
+        width: 100%;
+        height: 90%;
     }
 
     #food .text p {
@@ -951,8 +977,8 @@ video {
     }
 
     #page3 {
-        height: 85vh;
-        margin: 5% 0;
+        height: 60vh;
+        margin: 0 0 5%;
     }
 
     #page3>p {
@@ -982,7 +1008,7 @@ video {
 
     .elem {
         width: 90%;
-        height: 200px;
+        height: 150px;
         margin-bottom: 5%;
     }
 
@@ -1004,7 +1030,7 @@ video {
     }
 
     #content1 img {
-        width: 40%;
+        width: 25%;
     }
 
     #content1 .icons {
@@ -1087,6 +1113,8 @@ video {
     #nav {
         justify-content: space-between;
         /* transition: display 0.3s ease-in-out; */
+        position: relative;
+        background-color: #000 !important;
     }
 
     .navLinks {
@@ -1094,14 +1122,15 @@ video {
         font-weight: 600;
         font-size: 10px;
         background-color: aqua;
-        background-color: rgba(0, 0, 0, 0.685);
+        background-color: #000;
         color: white;
         padding: 130px 30px;
         display: none;
-        width: 80%;
-        margin-top: 52%;
+        width: 100%;
         position: absolute;
         left: 0;
+        height: 100vh;
+        top: 0;
     }
 
     .navLinks h4 {

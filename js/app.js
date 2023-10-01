@@ -12,15 +12,22 @@ document.addEventListener("mousemove", (dets) => {
 
 let toggleMenu = document.querySelector("#menu");
 let navLinks = document.querySelector(".navLinks");
+let closeIcon = document.querySelector("#close-icon");
 let navBar = document.querySelector("#nav");
 toggleMenu.addEventListener("click", () => {
     if (navLinks.style.display === "none" || navLinks.style.display === "") {
         navLinks.style.display = "block";
+        closeIcon.style.display = "block";
     } else {
         navLinks.style.display = "none";
+        closeIcon.style.display = "none";
     }
 });
 
+closeIcon.addEventListener("click", () => {
+    navLinks.style.display = "none";
+    closeIcon.style.display = "none";
+})
 
 // Food & Drink
 
@@ -114,51 +121,51 @@ gsap.to("#main", {
 })
 
 gsap.from(".about-us img, .about-us-in", {
-    y : 60, // y-axis se kitna
-    opacity : 0,
-    duration : 1, // slow karne k lye
-    stagger : 0.4, // elements ko alg alg render karwane k lye
-    scrollTrigger : {
-        trigger : ".about-us",
-        scroller : "body",
+    y: 60, // y-axis se kitna
+    opacity: 0,
+    duration: 1, // slow karne k lye
+    stagger: 0.4, // elements ko alg alg render karwane k lye
+    scrollTrigger: {
+        trigger: ".about-us",
+        scroller: "body",
         // markers : true,
-        start : "top 70%",
-        end : "top 65%",
-        scrub : 2
+        start: "top 70%",
+        end: "top 65%",
+        scrub: 2
     }
 })
 
 gsap.from("#colon1", {
-    y : -70,
-    x : -70,
-    scrollTrigger : {
-        trigger : "#colon1",
-        scroller : "body",
-        start : "top 55%",
-        end : "top 45%",
-        scrub : 4
+    y: -70,
+    x: -70,
+    scrollTrigger: {
+        trigger: "#colon1",
+        scroller: "body",
+        start: "top 55%",
+        end: "top 45%",
+        scrub: 4
     }
 })
 
 gsap.from("#colon2", {
-    y : 70,
-    x : 70,
-    scrollTrigger : {
-        trigger : "#colon2",
-        scroller : "body",
+    y: 70,
+    x: 70,
+    scrollTrigger: {
+        trigger: "#colon2",
+        scroller: "body",
         // start : "top 35%",
         // // end : "top 75%",
-        scrub : 3
+        scrub: 3
     }
 })
 
 gsap.from("#page4 h1", {
-    y : 50,
-    scrollTrigger : {
-        trigger : "#page4 h1",
-        scroller : "body",
-        start : "top 90%",
-        end : "top 80%",
-        scrub : 2
+    y: 50,
+    scrollTrigger: {
+        trigger: "#page4 h1",
+        scroller: "body",
+        start: "top 90%",
+        end: "top 80%",
+        scrub: 2
     }
 })
