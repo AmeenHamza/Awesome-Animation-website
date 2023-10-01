@@ -1112,9 +1112,7 @@ video {
 
     #nav {
         justify-content: space-between;
-        /* transition: display 0.3s ease-in-out; */
-        position: relative;
-        background-color: #000 !important;
+        position: fixed;
     }
 
     .navLinks {
